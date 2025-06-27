@@ -226,6 +226,13 @@ async function formatTradingCommand(text) {
           - "QQQ calls average 1.0 526" → **Symbol**: QQQ | **Type**: CALLS | **Strike**: $526
           - "SPY puts at 2.5 strike 530" → **Symbol**: SPY | **Type**: PUTS | **Strike**: $530
           - "QQ calls five two six average one point" → **Symbol**: QQQ | **Type**: CALLS | **Strike**: $526
+
+          2. **SELL ALL COMMANDS** - Complete exit
+          Format: **Action**: SELL ALL
+          Examples:
+          - "sell all QQQ" → **Action**: SELL ALL 
+          - "sell all positions" → **Action**: SELL ALL 
+          - "sell everything" → **Action**: SELL ALL 
           
           If you can extract ANY trading information, format it. Only return null if there's no trading content at all.`
         },
@@ -245,12 +252,7 @@ async function formatTradingCommand(text) {
     // - "trim here at 2.0" → **Action**: TRIM | **Price**: $2.00 
     // - "trim SPY calls" → **Action**: TRIM | **Price**: TBD
     
-    // 3. **SELL ALL COMMANDS** - Complete exit
-    // Format: **Action**: SELL ALL
-    // Examples:
-    // - "sell all QQQ" → **Action**: SELL ALL 
-    // - "sell all positions" → **Action**: SELL ALL 
-    // - "sell everything" → **Action**: SELL ALL 
+ 
 
     const formattedCommand = completion.choices[0].message.content.trim();
     
