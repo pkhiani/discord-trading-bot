@@ -42,6 +42,9 @@ OPENAI_API_KEY=your_openai_api_key_here
 npm start
 ```
 
+5. Invite the bot using this set of permissions:
+- https://discord.com/oauth2/authorize?client_id=YOUR_CLIENT_ID&scope=bot&permissions=3147776
+
 ## Usage
 
 1. **Join a voice channel** in your Discord server
