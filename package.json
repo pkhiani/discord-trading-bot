@@ -1,0 +1,20 @@
+{
+  "name": "discord-trading-bot-node",
+  "version": "1.0.0",
+  "description": "Discord bot that records voice, transcribes with AssemblyAI, and detects trading triggers.",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "dependencies": {
+    "@discordjs/voice": "^0.16.0",
+    "assemblyai": "^4.13.3",
+    "discord.js": "^14.14.1",
+    "dotenv": "^16.4.5",
+    "openai": "^4.104.0",
+    "opusscript": "^0.0.8",
+    "prism-media": "^1.3.5",
+    "sodium": "^3.0.2",
+    "ws": "^8.17.0"
+  }
+}
